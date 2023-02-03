@@ -8,9 +8,7 @@ app.use(
   cors({
     origin: [
       "https://www.google.com/",
-      "https://weather-frontend-aryan.netlify.app",
-      "http://localhost:3000",
-    ],
+      "https://weather-frontend-aryan.netlify.app/"]
   })
 );
 app.use(express.json());
