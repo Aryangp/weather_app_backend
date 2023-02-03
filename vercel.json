@@ -7,6 +7,11 @@
 "routes":[
     {
         "src":"/(.*)",
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE",
+            "Access-Control-Allow-Headers": "Content-Type"
+          },
         "dest":"server.js"
     }
 ]
